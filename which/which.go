@@ -11,7 +11,7 @@ const aflagName = "a"
 
 
 func Which() {
-	// TODO: Add support for help flag
+    helpFlag := flag.Bool("help", false, "-help: print the docs of the command")
 
 	aFlag := flag.Bool(aflagName, false, "-a: print all found entries for provided arguments")
 
